@@ -1,0 +1,19 @@
+#typed{
+    font-size: 40px;
+    color: rgb(197, 197, 197);
+}
+
+#untyped{
+    font-size: 40px;
+    color: rgb(137, 170, 255);
+}
+
+#str{
+    font-size: 40px;
+    color: rgb(204, 154, 154);
+}
+
+#nextstr{
+    font-size: 40px;
+    color: rgb(204, 154, 154);
+}
