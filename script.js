@@ -114,42 +114,52 @@ document.addEventListener("keydown",(e) => {
             if(score <= 0)
             {
                 levelField.textContent = "レベル0でした もっと頑張って";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10 - score) + "でレベル1です";
             }
             else if(score <= allQ_len/10)
             {
                 levelField.textContent = "レベル1でした もう少し頑張って";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*2 - score) + "でレベル2です";
             }
             else if(score <= allQ_len/10*2)
             {
                 levelField.textContent = "レベル2でした ちょっとすごい";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*3 - score) + "でレベル3です";
             }
             else if(score <= allQ_len/10*3)
             {
                 levelField.textContent = "レベル3でした すごい";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*4 - score) + "でレベル4です";
             }
             else if(score <= allQ_len/10*4)
             {
                 levelField.textContent = "レベル4でした すごい";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*5 - score) + "でレベル5です";
             }
             else if(score <= allQ_len/10*5)
             {
                 levelField.textContent = "レベル5でした 最強";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*6 - score) + "でレベル6です";
             }
             else if(score <= allQ_len/10*6)
             {
                 levelField.textContent = "レベル6でした 最強";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*7 - score) + "でレベル7です";
             }
             else if(score <= allQ_len/10*7)
             {
                 levelField.textContent = "レベル7でした 最強";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*8 - score) + "でレベル8です";
             }
             else if(score <= allQ_len/10*8)
             {
                 levelField.textContent = "レベル8でした 最強";
+                levelField.innerHTML += "<br>あと" + (allQ_len/10*9 - score) + "でレベル9です";
             }
             else
             {
                 levelField.textContent = "レベル9でした 最強";
+                levelField.innerHTML += "<br>このレベルは最高です";
             }
 
             typed = "";
